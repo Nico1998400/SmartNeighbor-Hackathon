@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+    <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sidebar.js" defer></script>
+    <script src="weatherAPI.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+        defer></script>
+</head>
+
+<body>
+    <div class="container-box">
+        <div id="mySidebar" class="sidebar closed">
+            <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+            <a href="javascript:void(0)" class="accordion">Region</a>
+            <div class="panel">
+                <a href="javascript:void(0)">Staircase</a>
+                <a href="javascript:void(0)">Building</a>
+                <a href="javascript:void(0)">Area</a>
+            </div>
+            <a href="pm.html">Direct Messages</a>
+            <a href="support.html">Support</a>
+            <a href="logout.html">Logout</a>
+        </div>
+
+        <div id="navbar">
+            <div class="logo-header">
+                <button class="openbtn" onclick="navEvent()">&#9776;</button>
+                <h1 class="page-header">Weather warnings</h1>
+                <p class="information-header">Weather warnings for your local region</p>
+            </div>
+        </div>
+        <div id="root">
+            <!--Alerts added by JS-->
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-container">
+            <a class="footer-button" href="connect.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-user-friends"></i></div>
+                    <p>Get Connected</p>
+                </div>
+            </a>
+            <a class="footer-button" href="sustainability.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-leaf"></i></div>
+                    <p>Sustainability</p>
+                </div>
+            </a>
+            <a class="footer-button" href="security.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-shield-alt"></i></div>
+                    <p>Security</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

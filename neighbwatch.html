@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neighbourhood Watch</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+        <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-box">
+            <div id="mySidebar" class="sidebar closed">
+                <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+                <a href="javascript:void(0)" class="accordion">Region</a>
+                <div class="panel">
+                    <a href="javascript:void(0)">Staircase</a>
+                    <a href="javascript:void(0)">Building</a>
+                    <a href="javascript:void(0)">Area</a>
+                </div>
+                <a href="pm.html">Direct Messages</a>
+                <a href="support.html">Support</a>
+                <a href="logout.html">Logout</a>
+            </div>
+
+            <div id="navbar">
+                <div class="logo-header">
+                    <button class="openbtn" onclick="navEvent()">&#9776;</button>
+                    <h1>Neighbourhood Watch</h1>
+                    <p class="information-header">Evening/night patrols together for safer streets</p>
+                </div>  
+            </div>
+
+            <div class="container-items">
+                <div class="image-container">
+                    <h3>Walk in central Helsingborg</h3>
+                    <p>Hi everyone, we are gonna gather at knutpunkten and walk the streets for safety</p>
+                    <span>at 5.00 pm, Wednesday 04-11-20 </span></p>
+                </div>
+                <div class="product-text"><b>Interested?</b>
+                    <span>
+                        <div class="interest-button">Yes</div>
+                        <i style="margin-left: 15px; cursor: pointer;" class="fas fa-comments"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="container-items">
+                <div class="image-container">
+                    <h3>Out of towm for a business trip</h3>
+                    <p>Hello neighbours! I'm out of town for a week on urgent business could you please keep an eye on my apartment?
+                        4a coolstreet. If you see something you can reach me at 042-*** **
+                    </p>
+                    <span> Wednesday 04-11-20 to Wednesday 04-11-27 </span></p>
+                </div>
+                <div class="product-text"><b>Interested?</b>
+                    <span>
+                        <div class="interest-button">Yes</div>
+                        <i style="margin-left: 15px; cursor: pointer;" class="fas fa-comments"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="container-items">
+                <div class="image-container">
+                    <h3>Join for a Neighbourhood walk</h3>
+                    <p>Hi, anyone interested in going for a Neighbourhood Watch walk?</p>
+                    <p>We will start near the Harbour bar!
+                    <span>at 4.00 pm, Wednesday 04-11-20 </span></p>
+                </div>
+                <div class="product-text"><b>Interested?</b>
+                    <span>
+                        <div class="interest-button">Yes</div>
+                        <i style="margin-left: 15px; cursor: pointer;" class="fas fa-comments"></i>
+                    </span>
+                </div>
+            </div>
+           <!-- <div class="container-items">
+                <div id="plus">
+                    <button class="plus-container" onclick="addInputContainer()"><i class="fa fa-2x fa-plus"></i></button>
+                </div>
+                <div id="input-items" class="container-items">
+                    <div class="opt-container">
+                        <p class="chk-visible">Visibility</p>
+                        <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                        <label for="visibility">Stairs</label><br>
+                        <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                        <label for="visibility">Building</label><br>
+                        <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                        <label for="visibility">Locality</label><br>
+                    </div>
+                    <div class="product-text">
+                        <label for="event">Event</label><br>
+                        <input type="text" id="head" name="head"><br>
+
+                        <label for="desc">Description</label><br>
+                        <textarea id="desc" name="description" rows="3"></textarea>
+                        <span><button class="btn">Post</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>   -->
+        <footer id="footer">
+            <div class="footer-container">
+                <a class="footer-button" href="connect.html">
+                    <div>
+                        <div class="button-icon"><i class="fas fa-user-friends"></i></div>
+                        <p>Get Connected</p>
+                    </div>
+                </a>
+                <a class="footer-button" href="sustainability.html">
+                    <div>
+                        <div class="button-icon"><i class="fas fa-leaf"></i></div>
+                        <p>Sustainability</p>
+                    </div>
+                </a>
+                <a class="footer-button" href="security.html">
+                    <div>
+                        <div class="button-icon"><i class="fas fa-shield-alt"></i></div>
+                        <p>Security</p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <script src="script.js" defer></script>
+    </body>
+</html>
+
+

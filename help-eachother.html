@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Help Eachother</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+        <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="sidebar.js" defer></script>
+        <script src="script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-box">
+            <div id="mySidebar" class="sidebar closed">
+                <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+                <a href="javascript:void(0)" class="accordion">Region</a>
+                <div class="panel">
+                    <a href="javascript:void(0)">Staircase</a>
+                    <a href="javascript:void(0)">Building</a>
+                    <a href="javascript:void(0)">Area</a>
+                </div>
+                <a href="pm.html">Direct Messages</a>
+                <a href="support.html">Support</a>
+                <a href="logout.html">Logout</a>
+            </div>
+
+            <div id="navbar">
+                <div class="logo-header">
+                    <button class="openbtn" onclick="navEvent()">&#9776;</button>
+                    <h1>Help eachother</h1>
+                    <p class="information-header">Ask your neighbor for help</p>
+                </div>  
+            </div>
+
+            <div class="container-items">
+                <div class="image-container">
+                    <h3>Need Help</h3>
+                    <p>Hi, I need help to carry furniture from the parking lot to my apartment. Can someone help me?</p>
+                    <p>Apartment no - <span>33 Cark Krooks Gata, apt L2</span>
+                    <p><span>at 5.00 pm, Wednesday 04-11-20 </span></p>
+                </div>
+                <div class="product-text"><b>Interested?</b>
+                    <span>
+                        <div class="interest-button">Yes</div>
+                        <i style="margin-left: 15px; cursor: pointer;" class="fas fa-comments"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="container-items">
+                <div class="image-container">
+                    <h3>Anyone going to supermarket</h3>
+                    <p>Can someone get me milk if you are going to supermarket before 4pm today?</p>
+                    <p>Apartment no - <span>33 Cark Krooks Gata, apt L2</span></p>
+                </div>
+                <div class="product-text"><b>Interested?</b>
+                    <span>
+                        <div class="interest-button">Yes</div>
+                        <i style="margin-left: 15px; cursor: pointer;" class="fas fa-comments"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="container-items">
+                <div id="plussign">
+                    <button class="plus-container" onclick="addInputContainer()"><i class="fa fa-2x fa-plus"></i></button>
+                </div>
+            </div>
+            <div id="input-items" class="container-items">
+                <div class="opt-container">
+                    <p class="chk-visible">Visibility</p>
+                    <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                    <label for="visibility">Stairs</label><br>
+                    <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                    <label for="visibility">Building</label><br>
+                    <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                    <label for="visibility">Locality</label><br>
+                </div>
+                <div class="product-text">
+                    <label for="event">What do I need?</label><br>
+                    <input type="text" id="head" name="head"><br>
+
+                    <label for="desc">Description</label><br>
+                    <textarea id="desc" name="description" rows="3"></textarea>
+                    <span><button class="btn">Post</button></span>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footer-container">
+                <a class="footer-button" href="connect.html">
+                    <div>
+                        <div class="button-icon"><i class="fas fa-user-friends"></i></div>
+                        <p>Get Connected</p>
+                    </div>
+                </a>
+                <a class="footer-button" href="sustainability.html">
+                    <div>
+                        <div class="button-icon"><i class="fas fa-leaf"></i></div>
+                        <p>Sustainability</p>
+                    </div>
+                </a>
+                <a class="footer-button" href="security.html">
+                    <div>
+                        <div class="button-icon"><i class="fas fa-shield-alt"></i></div>
+                        <p>Security</p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

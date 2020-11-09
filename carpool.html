@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carpool</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+    <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sidebar.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-box">
+        <div id="mySidebar" class="sidebar closed">
+            <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+            <a href="javascript:void(0)" class="accordion">Region</a>
+            <div class="panel">
+                <a href="javascript:void(0)">Staircase</a>
+                <a href="javascript:void(0)">Building</a>
+                <a href="javascript:void(0)">Area</a>
+            </div>
+            <a href="pm.html">Direct Messages</a>
+            <a href="support.html">Support</a>
+            <a href="logout.html">Logout</a>
+        </div>
+
+        <div id="navbar">
+            <div class="logo-header">
+                <button class="openbtn" onclick="navEvent()">&#9776;</button>
+                <h1 class="page-header">Carpool</h1>
+            <p class="information-header">Less Fuel. Less Pollution. Less Stress. Reduce your carbon footprint by travelling
+                together</p>
+            </div>  
+        </div>
+        <div class="container-items">
+            <div class="image-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d17822.970945054585!2d12.692099767058092!3d56.055528360650555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x4652323588beb127%3A0x6999d90413d68502!2sCentrum%2C%20Helsingborg!3m2!1d56.0458457!2d12.696375699999999!4m5!1s0x46523268f91a5a81%3A0xebf6b9714c9daf4c!2sMaxi%20ICA%20Stormarknad%20Helsingborg%2C%20Regementsv%C3%A4gen%207%2C%20254%2057%20Helsingborg!3m2!1d56.065387699999995!2d12.7196693!5e0!3m2!1sen!2sse!4v1604433709648!5m2!1sen!2sse" width="400" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <p class="minimize">
+                    <span class="carpool-header">To: </span><span class="carpool-text">ICA Maxi Helsingborg</span><br>
+                    <span class="carpool-header">From: </span><span class="carpool-text">Helsingborg Centrum</span><br>
+                    <span class="carpool-header">Time: </span><span class="carpool-text">18:00</span><br>
+                    <span class="carpool-header">Date: </span><span class="carpool-text">05/11/2020</span><br>
+                </p>
+            </div>
+            <div class="product-text"><b>Are you interested?</b>
+                <span>
+                    <div class="interest-button">Yes</div>
+                </span>
+            </div>
+        </div>
+
+        <div class="container-items">
+            <div class="image-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d142546.46664254466!2d12.68122310824766!3d56.06561683533444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x46523247515cf0cb%3A0xe2cca4749a57fd82!2sStattena%2C%20Helsingborg!3m2!1d56.0581138!2d12.7034191!4m5!1s0x4653d36f7d0791e7%3A0x5f95756cea43b217!2sHello%20Fresh%20Ab%2C%20Billesholmsv%C3%A4gen%2C%20Bjuv!3m2!1d56.0749146!2d12.941824599999999!5e0!3m2!1sen!2sse!4v1604433784163!5m2!1sen!2sse" width="400" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <p class="minimize">
+                    <span class="carpool-header">To: </span><span class="carpool-text">Bjuv</span><br>
+                    <span class="carpool-header">From: </span><span class="carpool-text">Helsingborg Stattena</span><br>
+                    <span class="carpool-header">Time: </span><span class="carpool-text">08:00</span><br>
+                    <span class="carpool-header">Date: </span><span class="carpool-text">Weekdays</span><br>
+                </p>
+            </div>
+            <div class="product-text"><b>Are you interested?</b>
+                <span>
+                    <div class="interest-button">Yes</div>
+                </span>
+            </div>
+        </div>
+
+        <div class="container-items">
+            <div class="image-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d71207.08752404747!2d12.737421914542141!3d56.10138703250569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x46523205d49b8b01%3A0xe60bbbd9d1159296!2sMariastaden%2C%20Helsingborg!3m2!1d56.084948499999996!2d12.694488!4m5!1s0x4653d3a4f28f0247%3A0x7e804e320b6ef225!2sFrode%20Laursen%20AB%2C%20Ji-te%20gatan%2C%20%C3%85storp!3m2!1d56.1248418!2d12.9205265!5e0!3m2!1sen!2sse!4v1604433912103!5m2!1sen!2sse" width="400" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <p class="minimize">
+                    <span class="carpool-header">To: </span><span class="carpool-text">Åstorp</span><br>
+                    <span class="carpool-header">From: </span><span class="carpool-text">Mariastaden</span><br>
+                    <span class="carpool-header">Time: </span><span class="carpool-text">07:00</span><br>
+                    <span class="carpool-header">Date: </span><span class="carpool-text">Weekdays</span><br>
+                </p>
+            </div>
+            <div class="product-text"><b>Are you interested?</b>
+                <span>
+                    <div class="interest-button">Yes</div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-container">
+            <a class="footer-button" href="connect.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-user-friends"></i></div>
+                    <p>Get Connected</p>
+                </div>
+            </a>
+            <a class="footer-button" href="sustainability.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-leaf"></i></div>
+                    <p>Sustainability</p>
+                </div>
+            </a>
+            <a class="footer-button" href="security.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-shield-alt"></i></div>
+                    <p>Security</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

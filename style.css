@@ -1,0 +1,823 @@
+
+* {
+    box-sizing : border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: rgb(39, 39, 39);
+}
+h1
+{
+    font-family: 'lobster';
+}
+.opt-container {
+    width: 18%;
+    font-size: small;
+    align-self: center;
+    margin-left: 5px;    
+}
+.opt-container a:visited {
+    color: black;
+}
+#input-items {
+    display: none;
+    background-color: whitesmoke;
+}
+.plus-container {
+    height: 15;
+    float: right;
+}
+
+.chk-visible {
+    line-height: 1.5;
+}
+.interested, #interest{
+    font-size: medium;
+    color: darkblue;
+    float: right;
+    margin: 5px;
+}
+
+#desc {
+    width: 250px;
+    overflow: auto;
+    border-radius: 10px;    
+    resize:none;
+}
+#head {
+    width: 250px;
+    border-radius: 6px;
+}
+.btn {
+    margin-left: 20px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 50px;
+    border-radius: 10px;
+    height: 20px;
+    display: inline-block;
+}
+
+.text-div {
+    position:relative;
+}
+
+.container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-items img {
+    width:400px;
+    height:300px;
+}
+
+.container-items {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin-bottom: 80px;
+}
+
+.interest-button {
+    padding: 10px;
+    text-align: center;
+    cursor:pointer;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.helpful-button {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.margin-name {
+    margin-top: 10px;
+}
+
+.logo-header {
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: lobster;
+    color: rgb(116,209,76);
+    font-size: 50px;
+    text-align: center;
+}
+
+.information-header {
+    margin-top: 20px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.minimize {
+    margin-top: 5%;
+    line-height: 1.4;
+}
+
+.product-text {
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.image-container{
+    padding: 20px;
+    border: 1px solid black;
+    width: 440px;
+    height: auto;
+}
+
+.footer-container {
+    max-height: 72px;
+    display: flex;
+    background-color: rgb(132,188,65);
+}
+
+.footer-button {
+    color: white;
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-button a:visited, .sidebar a:visited {
+    color: white;
+}
+
+
+.button-icon {
+    text-align: center;
+    font-size: 1.7em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-button p {
+    text-align: center;
+}
+
+.footer-button:hover {
+    cursor: pointer;
+    background-color:  rgb(102 146 68);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#footer a, .no-underline {
+    text-decoration: none;
+}
+
+/* StartPage */
+.image-logo {   
+    width: 400px; 
+    height: 150px;
+    padding-top: 2%;
+    display: block;
+    margin: auto;
+}
+
+.connect, .sustainability, .emergency{
+    font-size: 15px;
+    height: 125px;
+    width: 125px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    outline: none;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.connect {
+    background: rgb(0,0,249);
+    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
+    margin-left: 38%;
+    margin-top: 2%
+}
+
+.sustainability{
+    background: rgb(29,189,39);
+    background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
+    margin-left: 50%;
+}
+
+.emergency{
+    background: rgb(246,22,22);
+    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
+    margin-left: 38%;
+}
+/* Connect page style */
+
+.events, .localsnews, .helpeachothers{
+    background: rgb(0,0,249);
+    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    margin: 20px;
+    }
+    
+    .connect-wrapper{
+    display:flex;
+    justify-content: center;
+    }
+    
+    .connect-container {  
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 300px;
+        width: 300px;
+    }
+    
+    .events{
+        padding-top: 25px;
+    }
+    
+    .localsnews{
+        padding-top: 23px;
+    }
+    
+    .helpeachothers{
+        padding-top: 23px;
+    }
+    
+   
+    
+    
+     .parstyle{
+         text-align: center;
+     }
+    
+    
+     /* Sustainability page style */
+    
+    
+    
+     .carpool, .reuse, .smart-consumption{
+    background: rgb(29,189,39);
+    background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    margin: 20px;
+    }
+
+   
+    
+     .sustainabilty-wrapper{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    }
+    
+    .sustainabilty-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    width: 300px;
+    }
+    
+    
+    .smart-consumption{
+        align-self: flex-start;
+    }
+        
+    
+    .carpool, .reuse{
+        padding-top: 23px;
+    }
+    
+    
+    
+    
+    /* Security page style */
+    
+    .neigbourhoodwatch, .incidents, .weather-alerts{
+    background: rgb(246,22,22);
+    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    margin: 20px;
+    }
+    
+    .security-wrapper{
+        display:flex;
+        justify-content: center;
+    }
+    
+    
+    .security-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    }
+    
+    
+    .incidents {
+        padding-top: 25px;
+    }
+
+    .weather-alerts {
+        padding-top: 25px;
+    }
+    
+    .smart-consumption {
+        padding-top: 15px;
+    }
+
+    .neigbourhoodwatch {
+        padding-top: 15px;
+    }
+
+@media screen and (max-width: 400px) {
+    .connect,
+    .emergency{
+        margin-left:15%;
+    }
+}
+
+.startpage-img {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    width: 70%;
+    margin-top: -150px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* The sidebar menu */
+
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidebar a:hover, .accordion:hover, .openbtn:hover {
+    color: rgb(29, 189, 39);
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+
+.openbtn {
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: rgb(39, 39, 39);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#navbar {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 8px;
+    width: 100%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.news-content {
+    color: black;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.news-paragraph {
+    padding-bottom: 25px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.news-header {
+    background-color: rgb(190, 40, 25);
+    margin-bottom: 20px;
+    color: white;
+    text-align: left;
+    padding: 7px;
+}
+
+.news-container {
+    width: 60%;
+    height: auto;
+    padding-bottom: 150px;
+    margin: auto;
+    
+}
+
+.info-style {
+    text-align: center;
+}
+
+.text-div {
+    position:relative;
+}
+
+.inner-wrap {
+    display:flex;
+    width: 75%;
+    margin: auto;
+    border: 2px solid rgba(29,189,39,1);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: none;
+
+
+}
+
+.chat-nav {
+    flex:2;
+    padding:12px 22px;
+    overflow-y: auto;
+    padding-right: 30px;
+    height: 40vh;
+    color: rgba(29,189,39,1);
+}
+
+.chat-box {
+    padding:10px 15px;
+    flex:5;
+    margin-left: 20px;
+    border-left: 2px solid rgba(29,189,39,1);
+    overflow-y: auto;
+    height: 40vh;
+    color: rgba(29,189,39,1);
+
+}
+
+.pers-chat {
+    line-height:23px;
+}
+
+.bottom-wrap {
+    display:flex;
+    width: 75%;
+    margin: auto;
+    border: 2px solid rgba(29,189,39,1);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.opts {
+    flex:2;
+    padding:12px 22px;
+    overflow-y: auto;
+    padding-right: 30px;
+    height: 10vh;
+    color: rgba(29,189,39,1);
+    position: relative;
+}
+
+.type-box{
+    overflow-y: auto;
+    overflow: hidden;
+    border:none;
+    height: 10vh;
+    outline: none;
+    resize: none;
+    background-color: rgb(39, 39, 39);
+    display: block;
+    width: 90%;
+    color: rgba(29,189,39,1);
+    cursor: pointer;
+
+
+
+}
+
+.type-box-cont{
+    flex:5;
+    padding:10px 15px;
+    margin-left: 20px;
+    border-left: 2px solid rgba(29,189,39,1);
+    position: relative;
+    color: rgba(29,189,39,1);
+}
+
+#plane {
+    position:absolute;
+    top: 15px;
+    right: 15px;
+    color: rgba(29,189,39,1);
+    cursor: pointer;
+}
+
+#plus {
+    position:absolute;
+    top: 15px;
+    right: 5px;
+    color: rgba(29,189,39,1);
+    cursor: pointer;
+}
+
+#cogs {
+    position:absolute;
+    top: 15px;
+    left: 15px;
+    color: rgba(29,189,39,1);
+    cursor: pointer;
+}
+
+.pers-chat:hover{
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+.padding-container {
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.record-title {
+    color: red;
+}
+
+/* Sign out */
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 60px;
+    height: 60px    ;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loader-container{
+      height: 300px;
+      width: 300px;
+    display:flex;
+    flex-direction: column;
+    border:solid white;
+      
+  }
+  .loader-container p{
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+  }
+
+  .loader{
+      align-self: center;
+    
+  }
+
+  .loader-wrapper{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; 
+      height: 400px;
+     }
+
+
+#bankid-body{
+    background-color: white !important;
+}
+
+#bankid-img {    
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+    margin-bottom: 4%;
+    width: 70%;
+    max-width: 450px;
+}
+
+#qr-code-img{
+    max-width: 50px;
+    display: block;
+    margin: auto;
+}
+
+#qr-code {
+color: rgb(0, 110, 129);
+}
+.bank-id {
+    text-align: center;
+
+}
+
+.bank-id-p {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+.chat-nav::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  .chat-nav::-webkit-scrollbar-track {
+    background:transparent;        /* color of the tracking area */
+  }
+  .chat-nav::-webkit-scrollbar-thumb {
+    background-color: rgb(110, 110, 110);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(110, 110, 110);  /* creates padding around scroll thumb */
+  }
+
+  .startscreen-nav-btn {
+      position: absolute;
+      left: 8px;
+      top: 8px;
+  }
+
+  /*Ticker style*/
+
+  /* OUTER CONTAINER */
+.tcontainer {
+    width: 100%;
+    overflow: hidden; /* Hide scroll bar */
+  }
+   
+  /* MIDDLE CONTAINER */
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%; /* Push contents to right side of screen */
+    background-color:red;
+    color:white;
+    font-weight: bold;
+  }
+  
+  /* INNER CONTAINER */
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .ticker-move {
+    /* Basically move items from right side of screen to left in infinite loop */
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 10s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused; /* Pause scroll on mouse hover */
+  }
+  
+  /* ITEMS */
+  .ticker-item{
+    display: inline-block; /* Lay items in a horizontal line */
+    padding: 0 2rem;
+  }
+
+  /*Map config*/
+
+  .map_container {
+    background-color: GAINSBORO;
+    border : 2px solid black;
+    margin: auto;
+    height: 200px;
+    width: 300px;
+}
+
+  

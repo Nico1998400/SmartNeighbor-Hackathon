@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Incidents</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+    <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sidebar.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-box">
+        <div id="mySidebar" class="sidebar closed">
+            <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+            <a href="javascript:void(0)" class="accordion">Region</a>
+            <div class="panel">
+                <a href="javascript:void(0)">Staircase</a>
+                <a href="javascript:void(0)">Building</a>
+                <a href="javascript:void(0)">Area</a>
+            </div>
+            <a href="pm.html">Direct Messages</a>
+            <a href="support.html">Support</a>
+            <a href="logout.html">Logout</a>
+        </div>
+
+        <div id="navbar">
+            <div class="logo-header">
+                <button class="openbtn" onclick="navEvent()">&#9776;</button>
+                <h1 class="page-header">Incidents</h1>
+            <p class="information-header">In this page you can report Incidents and minimize accidents</p>
+            </div>  
+        </div>
+        <div class="container-items">
+            <div class="image-container">
+                <img src="images/stair.jpg" alt="stair">
+                <p class="margin-name"></p><strong>Name:</strong> Rod Castro</p>
+                </br>
+                <p><strong>Incident:</strong> Fell on the floor</p>
+                </br>
+                <p><strong>reported?</strong> Yes</p>
+                </br>
+                <p><strong>Where:</strong> Malmogatan 10A in the main staircase</p>
+                </br>
+                <p><strong>Description:</strong> Be aware of the 2nd stair handle inside Malmögatan 10A. its very loose and it made me fell so i hit my back very badly.</p>
+            </div>
+            <div class="product-text"><b>Was this infomation helpful?</b>
+                <span>
+                    <div class="helpful-button">Yes</div>
+                    <div class="interest-button">No</div>
+                    <i style="margin-left: 15px; cursor: pointer;" class="fas fa-comments"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="container-items">
+            <div class="image-container">
+                <p><strong>Name:</strong> Erik Lundh</p>
+                </br>
+                <p><strong>Incident:</strong> Cat got hit by car</p>
+                </br>
+                <p><strong>Reported?</strong> Yes</p>
+                </br>
+                <p><strong>Where:</strong> Malmogatan 10B</p>
+                </br>
+                <p><strong>Description:</strong> A cat go hit on the road outside the door to Malmogatan 10B. The cat's color is orange and white and is sadly not alive.</p>
+            </div>
+            <div class="product-text"><b>Was this infomation helpful?</b>
+                <span>
+                    <div class="helpful-button">Yes</div>
+                    <div class="interest-button">No</div>
+                    <i style="margin-left: 15px; cursor: pointer;" class="fas fa-comments"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="container-items">
+            <div class="image-container">
+                <img src="images/leak.jpg" alt="stair">
+                <p class="margin-name"><strong>Name:</strong> Jerry Löfvenhaft</p>
+                </br>
+                <p><strong>Incident:</strong> Roofs is leaking</p>
+                </br>
+                <p><strong>reported?</strong> Yes</p>
+                </br>
+                <p><strong>Where:</strong> Malmogatan 10B</p>
+                </br>
+                <p><strong>Description:</strong> The roof is leaking inside my apartment in the 4th floor to the right and the landlord is not fixing the problem. How are we going to solve this so it wont damage the apartments?</p>
+            </div>
+            <div class="product-text"><b>Was this infomation helpful?</b>
+                <span>
+                    <div class="helpful-button">Yes</div>
+                    <div class="interest-button">No</div>
+                    <i style="margin-left: 15px; cursor: pointer;" class="fas fa-comments"></i>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <footer id="footer">
+        <div class="footer-container">
+            <a class="footer-button" href="connect.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-user-friends"></i></div>
+                    <p>Get Connected</p>
+                </div>
+            </a>
+            <a class="footer-button" href="sustainability.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-leaf"></i></div>
+                    <p>Sustainability</p>
+                </div>
+            </a>
+            <a class="footer-button" href="security.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-shield-alt"></i></div>
+                    <p>Security</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
